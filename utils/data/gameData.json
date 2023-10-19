@@ -1,0 +1,48 @@
+{
+  "began_at": "2023-10-03 19:00",
+  "ended_at": "2023-10-03 21:00",
+  "players": [
+    { "player": "6524be7d1f82e109049d33e0", "score": -24 },
+    { "player": "6524be7d1f82e109049d33e1", "score": 75 },
+    { "player": "6524be7d1f82e109049d33e2", "score": -51 }
+  ],
+  "winner": "6524be7d1f82e109049d33e1",
+  "rounds": [
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "landlord": "6524be7d1f82e109049d33e0",
+      "won": false,
+      "spring": false,
+      "landlord_score": -6,
+      "peasant_score": 3
+    },
+    {
+      "base_score": 3,
+      "bombs": 2,
+      "landlord": "6524be7d1f82e109049d33e1",
+      "won": true,
+      "spring": true,
+      "landlord_score": 48,
+      "peasant_score": -24
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "landlord": "6524be7d1f82e109049d33e1",
+      "won": true,
+      "spring": false,
+      "landlord_score": 12,
+      "peasant_score": -6
+    },
+    {
+      "base_score": 3,
+      "bombs": 2,
+      "landlord": "6524be7d1f82e109049d33e2",
+      "won": false,
+      "spring": false,
+      "landlord_score": -24,
+      "peasant_score": 12
+    }
+  ]
+}

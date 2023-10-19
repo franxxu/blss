@@ -1,0 +1,92 @@
+extends base
+
+block content
+
+   div(class='bg-white border border-gray-300 text-2xl max-h-fit overflow-auto')
+    table(class='table-auto w-auto')
+      thead.z-30.sticky.top-0
+        tr
+          th(class='w-10')
+            svg(class='h-10 w-10 fill-green-600')
+              use(xlink:href='/img/icons.svg#icon-repeat')
+          each element in game.players
+            th(class='p-2')
+              img(src=`/img/${element.player.image}`, alt=`${element.player.name}` class='h-14 w-14 rounded-full mx-0-auto')
+          th(class='text-center')
+            img(src='/img/landlord.png' class='h-14 w-14 rounded-full mx-0-auto')
+          th(class='text-center mx-0-auto')
+            svg(class='h-10 w-10 fill-green-600 mx-0-auto')
+              use(href='/img/icons.svg#icon-award')
+          th(class='p-2 text-left')
+            svg(class='w-10 h-10 mx-0-auto')
+              use( href='/img/icons.svg#icon-coin')
+          th(class='p-2 text-left')
+            svg(class='w-10 h-10 mx-0-auto')
+              use( href='/img/icons.svg#icon-bomb')
+          th(class='p-2 text-left')
+            svg(class='w-10 h-10 fill-green-600 mx-0-auto')
+              use( href='/img/icons.svg#icon-spring')
+      - 
+        var springTimes = 0
+        var bombsTimes = 0
+        var wonTimes = 0
+      tbody
+        each round, index in game.rounds
+          tr(onclick='selectRow(this,\'roundId\')' id=`${round._id}`)
+            td(class='p-2 text-center font-bold')= index
+            each element in game.players
+              td(class=' pr-2 text-right')= element.player.name === round.landlord.name ? round.landlord_score : round.peasant_score
+            td(class=' text-center')= round.landlord.name
+            td(class=' text-center')
+              input(type='checkbox' class='w-6 h-6' checked=round.won disabled)
+              - wonTimes += round.won
+            td(class=' text-center')= round.base_score
+            td(class=' text-center')= round.bombs
+              - bombsTimes += (round.bombs > 0) 
+            td(class='text-center')
+              input(type='checkbox' class='w-6 h-6' checked=round.spring disabled)
+              - springTimes += round.spring
+        - if( game.rounds.length > 0 )    
+          tr
+            td(class='p-2 text-center font-bold')= game.rounds.length
+            each element in game.players 
+              td(class='pr-2 text-right font-bold')= element.score
+            td(class='text-center font-bold')= game.winner.name
+            td(class='text-center font-bold')= wonTimes + '/' + game.rounds.length
+            td
+            td(class='text-center font-bold')= bombsTimes + '/' + game.rounds.length
+            td(class='text-center font-bold')= springTimes + '/' + game.rounds.length
+          //- new round below
+        form(id='removeRound' name='removeRound' method='post' action='/removeRound' onsubmit='return validateSelection(\'roundId\');')
+          input(type='hidden' form='removeRound' name='roundId' id='roundId' value='')
+          input(type='hidden' form='removeRound' name='gameId' value=`${game._id}`)
+        form(id='game' name='game' method='post' action=`/play/${game._id}`)
+          tr
+            td
+              button(type='submit' class='btn-primary') ✔
+            fieldset(class='')
+              each element in game.players
+                td(class=' text-center py-4 px-2')
+                  input(class='form-radio w-10 h-10' type='radio' name='landlord' value=`${element.player._id}` checked)
+              td
+                button(type='submit' class='btn-primary' form='removeRound') ❌
+              td(class='text-center py-4 px-2')
+                input(type='checkbox' class='w-10 h-10' name='won' id='won')
+              td(class='text-center')
+                div(class='text-center flex-col')
+                  div
+                    button(class=' w-8 h-8' type='button' onclick='incNumber(\'base_score\')') ➕
+                  div
+                    input(type='text' class='w-10 h-10 font-bold text-xl' name='base_score' id='base_score' value='3')
+                  div
+                    button(class=' w-8 h-8' type='button' onclick='decNumber(\'base_score\')') ➖
+              td(class='text-center')
+                div(class='text-center flex-col')
+                  div
+                    button(class=' w-8 h-8' type='button' onclick='incNumber(\'bombs\')') ➕
+                  div
+                    input(type='text' class='w-10 h-10 font-bold text-xl' name='bombs' id='bombs' value='0')
+                  div
+                    button(class=' w-8 h-8' type='button' onclick='decNumber(\'bombs\')') ➖
+              td(class='text-center')
+                input(type='checkbox'  class='w-10 h-10' name='spring' id='spring')

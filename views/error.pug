@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title #{status}
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,300i,700')
+    link(rel='shortcut icon' type='/image/png' href='/img/favicon.png')
+    link(rel='stylesheet' href='/css/output.css')
+    
+  body 
+    main.flex.relative
+      div(class='max-w-full m-1 grid gap-2 grow')
+        details(class='bg-gray-300 open:bg-amber-200 duration-300')
+          summary(class='bg-inherit px-5 py-3 cursor-pointer text-2xl font-bold')= message
+          div(class='bg-white border border-gray-300 text-2xl')
+            pre= stack

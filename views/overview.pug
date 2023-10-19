@@ -1,0 +1,89 @@
+extends base
+
+block content 
+  main.flex.relative
+    div(class='max-w-full m-1 grid gap-2 grow')
+      each game in games
+        div(class='rounded-md overflow-hidden shadow-md bg-[#fff] flex flex-col')
+          //- div(class='grow bg-blue-100 text-left text-3xl font-bold text-gray-400 p-3 drop-shadow-xl')= game.began_at.toLocaleString() 
+          div(class='grid grid-cols-3 p-1')
+            div(class='flex col-span-2 p-1 items-center')
+              svg(class='h-16 w-16 fill-green-600')
+                use(xlink:href='img/icons.svg#icon-user') 
+                  title Players of the game
+              each player in game.players
+                a(href=`/player/${game.winner._id}`)
+                  img(src=`img/${player.player.image}`, alt=`${player.player.name}` class='h-20 w-20 rounded-full m-2 drop-shadow-lg')
+            div(class='flex p-1 items-center')
+              svg(class='h-16 w-16 fill-green-600')
+                use(href='img/icons.svg#icon-award')
+                  title Winner of the game
+              a(href=`/player/${game.winner._id}`)
+                img(src=`img/${game.winner.image}`, alt=`${game.winner.name}` class='h-20 w-20 rounded-full m-2')
+            div(class='flex p-1 items-end')
+              svg(class='h-10 w-10 fill-green-600')
+                use(href='img/icons.svg#icon-clock')
+                  title Duration of the game
+              span.pl-3.bg-white.font-bold.text-2xl.p-1= ((game.ended_at - game.began_at) / 36e5).toFixed(2) + ' 小时'
+            div(class='flex p-1 items-end')
+              svg(class='h-10 w-10 fill-green-600')
+                use(xlink:href='img/icons.svg#icon-repeat')
+                  title Rounds of the game
+              span.pl-3.bg-white.font-bold.text-2xl.p-1= game.rounds.length + ' 回合'
+            div(class='flex p-1 items-end')
+              svg(class='h-10 w-10 fill-green-600')
+                use(xlink:href='img/icons.svg#icon-bookmark')
+                  title Winning score
+              span.pl-3.bg-white.font-bold.text-2xl.p-1= game.getPlayerScore(game.winner)
+          details(class='bg-gray-300 open:bg-amber-200 duration-300')
+            summary(class='bg-inherit px-5 py-3 cursor-pointer text-2xl font-bold')= '游戏详情 (' + game.began_at.toLocaleString() + ')'
+            div(class='bg-white border border-gray-300 text-2xl max-h-96 overflow-auto')
+              table(class='table-auto w-full')
+                thead(class='sticky top-0 z-30 bg-white')
+                  tr
+                    each player in game.players
+                      th(class='')
+                        img(src=`img/${player.player.image}`, class='h-14 w-14 rounded-full')
+                    th(class='text-center') 
+                        img(src='/img/landlord.png' class='h-14 w-14 rounded-full mx-0-auto')
+                    th(class='p-2 text-center')
+                      svg(class='h-10 w-10 fill-green-600')
+                        use(href='/img/icons.svg#icon-award')
+                    th(class='text-center p-2') 
+                      svg(class='w-10 h-10')
+                        use(x=7 href='/img/icons.svg#icon-coin')
+                    th(class='text-center p-2') 
+                      svg(class='w-10 h-10')
+                        use(x=7 href='/img/icons.svg#icon-bomb')
+                    th 
+                      svg(class='w-10 h-10 fill-green-600')
+                        use(x=7 href='/img/icons.svg#icon-spring')
+                - 
+                  var springTimes = 0
+                  var bombsTimes = 0
+                  var wonTimes = 0
+                tbody
+                  each round in game.rounds
+                    tr
+                      each player in game.players
+                        - var score = player.player.name === round.landlord.name ? round.landlord_score : round.peasant_score;
+                        td(class='pr-2 text-right font-black')= score
+                      td(class='text-center')= round.landlord.name
+                      td(class=' text-center')
+                        input(type='checkbox' class='w-10 h-10' checked=round.won disabled)
+                        - wonTimes += round.won
+                      td(class='text-center')= round.base_score
+                      td(class='text-center')= round.bombs
+                        - bombsTimes += (round.bombs > 0) 
+                      td(class='pr-2 text-center')
+                        input(type='checkbox' class='w-10 h-10' checked=round.spring disabled)
+                        - springTimes += round.spring
+                  tr
+                    each player in game.players 
+                      td(class='pr-2 text-right font-bold')= player.score
+                    td(class='text-center font-bold')= game.winner.name
+                    td(class='text-center font-bold')= wonTimes + '/' + game.rounds.length
+                    td
+                    td(class='text-center font-bold')= bombsTimes + '/' + game.rounds.length
+                    td(class='text-center font-bold')= springTimes + '/' + game.rounds.length
+

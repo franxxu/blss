@@ -1,0 +1,15 @@
+extends base
+
+block content
+
+  form(id='game' name='game' method='post' action='/play')
+    fieldset
+      div(class='flex flex-row gap-4 p-4 border-dotted')
+        each player in players
+          div(class='block rounded-lg bg-white shadow-xl dark:bg-neutral-700 text-center p-6')
+            a(href='#' onclick=`document.getElementById('${player._id}').checked=!document.getElementById('${player._id}').checked` class='active:bg-blue-600 ')
+              img(src=`/img/${player.image}` class='w-20 h-20 rounded-full active:bg-blue-600 mx-0-auto')
+            div(class='py-4')
+              h5(class='mb-2 text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50')= player.name 
+              input(class='pl-5 w-10 h-10' type='checkbox' name='players' id=`${player._id}` value=`${player._id}` checked=true)
+    button(type='submit' class='btn-primary w-3/4 m-4 text-lg') 开始游戏

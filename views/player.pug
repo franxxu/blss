@@ -1,0 +1,29 @@
+extends base
+
+block content
+  
+    
+  table(class='table-auto w-full border border-slate-300')
+    caption 玩家
+    thead
+      tr
+        th 姓名
+        th 照片
+    tbody
+      each player in players
+        tr
+          td= player.name
+          td
+            img(src=`img/${player.image}` height='30' width='30')
+      tr
+        td
+          form(action='/player', method='post' class='w-full')
+            div(class='flex flex-nowrap')
+              input(type='text' class='input__form' placeholder='玩家姓名' name='name' id='name' required)
+              button(type='submit' class='button__form whitespace-nowrap') 添加
+        td 
+          form(action='/player', method='post' class='w-full')
+            div(class='flex flex-nowrap')
+              input(type='file' id='avatar' name='avatar' accept='image/png, image/jpeg' class='max-w-[15rem]')
+              button(type='submit' class='button__form whitespace-nowrap') 上传
+            
