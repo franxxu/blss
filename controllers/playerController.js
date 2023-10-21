@@ -16,6 +16,30 @@ class APIFeatures {
 
   filter() {}
 }
+const allPlayers = catchAsync(async (req, res, next) => {
+  const players = await Player.find();
+  res.status(200).render('player', {
+    title: 'All Players',
+    players,
+  });
+});
+
+const newPlayer = catchAsync(async (req, res, next) => {
+  await Player.create(req.body);
+  allPlayers(req, res, next);
+});
+
+const modifyPlayer = catchAsync(async (req, res, next) => {
+  if (req.body['delete.x']) {
+    await Player.findByIdAndDelete(req.params.id);
+  } else {
+    await Player.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+      runValidators: true,
+    });
+  }
+  allPlayers(req, res, next);
+});
 
 const getAllPlayers = async (req, res) => {
   try {
@@ -86,6 +110,9 @@ const deletePlayerById = async (req, res) => {
 
 module.exports = {
   // normalizeName,
+  modifyPlayer,
+  allPlayers,
+  newPlayer,
   getAllPlayers,
   getPlayerById,
   createPlayer,

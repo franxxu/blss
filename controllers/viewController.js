@@ -4,8 +4,6 @@ const catchAsync = require('../utils/catchAsync');
 const Player = require('../models/player');
 const AppError = require('../utils/appError');
 
-const { ObjectId } = mongoose.Types;
-
 exports.getOverview = catchAsync(async (req, res, next) => {
   const games = await Game.find({ ended_at: { $not: { $eq: null } } }).populate(
     ['winner', 'players.player', 'rounds.landlord'],
@@ -22,21 +20,6 @@ exports.getGame = catchAsync(async (req, res, next) => {
   res.status(200).render('game', {
     title: 'Game Details',
     game,
-  });
-});
-
-exports.player = catchAsync(async (req, res, next) => {
-  let aPlayer;
-  if (req.method === 'POST') {
-    aPlayer = await Player.create(req.body);
-  } else if (req.method === 'DELETE') {
-    aPlayer = await Player.findByIdAndDelete(req.params.id);
-  }
-  const players = await Player.find();
-  res.status(200).render('player', {
-    title: 'All Players',
-    players,
-    aPlayer,
   });
 });
 

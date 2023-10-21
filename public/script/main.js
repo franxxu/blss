@@ -34,3 +34,8 @@ const decNumber = function (inputId, dec = 1, min = 0, max = 9) {
   if (n <= min) return;
   input.value = n - dec;
 };
+
+const selectUser = function (inputId) {
+  const input = document.getElementById(inputId);
+  input.checked = !input.checked;
+};

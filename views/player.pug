@@ -2,28 +2,25 @@ extends base
 
 block content
   
+  div(class='grid grid-cols-3 gap-4 p-4 border-dotted')
+    each player, index in players
+      div(class='block rounded-lg bg-white shadow-xl text-center p-6')
+        a(href='#' onclick=`selectUser('${player._id}')` class='active:bg-blue-600')
+          img(src=`/img/${player.image}` class='w-20 h-20 rounded-full active:bg-blue-600 mx-0-auto')
+        form(id=`playerForm${index}` name=`playerForm${index}` method='post' action=`/player/${player._id}`)
+          div(class='py-4')
+            input(class='w-full text-center font-bold text-xl' type='text' name='name' id=`${player.name}` value=`${player.name}`)
+          div(class='flex flex-row gap-4')
+            div(class='')
+              input(type='image' name='delete' src='/img/delete.svg' class='w-16 h-16 pt-3')
+            div(class='text-right')
+              input(type='image' name='update' src='/img/ok.svg' class='w-16 h-16 pt-3') 
+    div(class='block rounded-lg bg-white shadow-xl text-center p-6')
+      a(href='#' class='active:bg-blue-600 ')
+        img(src='/img/avatar.svg' class='w-20 h-20 active:bg-blue-600 mx-0-auto')
+      div(class='py-4')
+        form(id='playerForm0' name='playerForm0' method='post' action='/player')
+          input(class='w-full text-center font-bold text-xl' type='text' name='name' id='newName' placeholder='name')
+          input(type='image' name='create' value='OK' src='/img/ok.svg' class='w-14 h=14 pt-3')
     
-  table(class='table-auto w-full border border-slate-300')
-    caption 玩家
-    thead
-      tr
-        th 姓名
-        th 照片
-    tbody
-      each player in players
-        tr
-          td= player.name
-          td
-            img(src=`img/${player.image}` height='30' width='30')
-      tr
-        td
-          form(action='/player', method='post' class='w-full')
-            div(class='flex flex-nowrap')
-              input(type='text' class='input__form' placeholder='玩家姓名' name='name' id='name' required)
-              button(type='submit' class='button__form whitespace-nowrap') 添加
-        td 
-          form(action='/player', method='post' class='w-full')
-            div(class='flex flex-nowrap')
-              input(type='file' id='avatar' name='avatar' accept='image/png, image/jpeg' class='max-w-[15rem]')
-              button(type='submit' class='button__form whitespace-nowrap') 上传
             

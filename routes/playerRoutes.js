@@ -7,13 +7,13 @@ const router = express.Router();
 
 router
   .route('/')
-  .get(playerController.getAllPlayers)
-  .post(playerController.createPlayer);
+  .post(playerController.newPlayer)
+  .get(playerController.allPlayers);
 
 router
   .route('/:id')
   .get(playerController.getPlayerById)
-  .patch(playerController.updatePlayerById)
+  .post(playerController.modifyPlayer)
   .delete(playerController.deletePlayerById);
 
 module.exports = router;
