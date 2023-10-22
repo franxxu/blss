@@ -30,6 +30,10 @@ block content
         var springTimes = 0
         var bombsTimes = 0
         var wonTimes = 0
+        var colors = {}
+        colors[game.players[0].player.name] = 'bg-green-300'
+        colors[game.players[1].player.name] = 'bg-yellow-300'
+        colors[game.players[2].player.name] = 'bg-red-300' 
       tbody
         each round, index in game.rounds
           tr(onclick='selectRow(this,\'roundId\')' id=`${round._id}`)
@@ -50,7 +54,7 @@ block content
             td(class='text-center')
               input(type='checkbox' class='w-6 h-6' checked=round.spring disabled)
               - springTimes += round.spring
-            td(class=' text-center')= round.landlord.name
+            td(class=`text-center ${colors[round.landlord.name]}`)= round.landlord.name
         - if( game.rounds.length > 0 )    
           tr
             td(class='p-2 text-center font-bold')= game.rounds.length
