@@ -44,22 +44,22 @@ block content
                 thead(class='sticky top-0 z-30 bg-white')
                   tr
                     each player in game.players
-                      th(class='')
-                        img(src=`img/${player.player.image}`, class='h-14 w-14 rounded-full')
+                      th(class='text-center')
+                        img(src=`img/${player.player.image}`, class='h-14 w-14 rounded-full mx-0-auto')
                     th(class='text-center') 
                         img(src='/img/landlord.png' class='h-14 w-14 rounded-full mx-0-auto')
-                    th(class='p-2 text-center')
-                      svg(class='h-10 w-10 fill-green-600')
+                    th(class='text-center')
+                      svg(class='h-10 w-10 fill-red-600 mx-0-auto')
                         use(href='/img/icons.svg#icon-award')
-                    th(class='text-center p-2') 
-                      svg(class='w-10 h-10')
-                        use(x=7 href='/img/icons.svg#icon-coin')
-                    th(class='text-center p-2') 
-                      svg(class='w-10 h-10')
-                        use(x=7 href='/img/icons.svg#icon-bomb')
-                    th 
-                      svg(class='w-10 h-10 fill-green-600')
-                        use(x=7 href='/img/icons.svg#icon-spring')
+                    th(class='text-center') 
+                      svg(class='w-10 h-10 fill-[#F2C83B]  mx-0-auto')
+                        use(href='/img/icons.svg#icon-coin')
+                    th(class='text-center') 
+                      svg(class='w-10 h-10 mx-0-auto')
+                        use(href='/img/icons.svg#icon-bomb')
+                    th(class='text-center') 
+                      svg(class='w-10 h-10 fill-green-600 mx-0-auto')
+                        use(href='/img/icons.svg#icon-spring')
                 - 
                   var springTimes = 0
                   var bombsTimes = 0
