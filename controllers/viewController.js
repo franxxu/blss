@@ -9,9 +9,12 @@ exports.getOverview = catchAsync(async (req, res, next) => {
   const games = await Game.find({ ended_at: { $not: { $eq: null } } })
     .sort('-began_at')
     .populate(['winner', 'players.player', 'rounds.landlord']);
+
+  const message = req.params.id ? `game [${req.params.id}] deleted!` : '';
   res.status(200).render('overview', {
     title: 'All Games',
     games,
+    message,
   });
 });
 
@@ -75,7 +78,6 @@ exports.updateGame = catchAsync(async (req, res, next) => {
 });
 
 exports.modifyGame = catchAsync(async (req, res, next) => {
-  console.log(req.body.gameId, req.body.roundId);
   let game = await Game.findById(req.body.gameId);
   game.pullRound(req.body.roundId);
   game = await game.save();
@@ -84,4 +86,9 @@ exports.modifyGame = catchAsync(async (req, res, next) => {
     title: '游戏开始',
     game,
   });
+});
+
+exports.removeGame = catchAsync(async (req, res, next) => {
+  await Game.findByIdAndRemove(req.params.id);
+  exports.getOverview(req, res, next);
 });

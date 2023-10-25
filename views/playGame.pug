@@ -1,8 +1,11 @@
 extends base
 
 block content
-
-   div(class='bg-white border border-gray-300 text-2xl overflow-auto snap-y flex flex-col-reverse' style='max-height:75vh;')
+  div(class='absolute right-0 z-[100] font-bold text-2xl')= game.began_at.toLocaleTimeString('en-US')
+    div(class='text-right p-2')
+      form(action=`/removeGame/${game._id}` method='post')
+        input(type='image' src='/img/recycle.svg' class='w-12 h-12')
+  div(class='bg-white border border-gray-300 text-2xl overflow-auto snap-y flex flex-col-reverse' style='max-height:75vh;')
     table(class='table-auto w-full')
       thead(class='z-30 sticky top-0 bg-blue-300')
         tr
