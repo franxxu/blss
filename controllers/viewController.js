@@ -6,9 +6,9 @@ const AppError = require('../utils/appError');
 
 exports.getOverview = catchAsync(async (req, res, next) => {
   //games with no ended_at are considered just created not yet played.
-  const games = await Game.find({ ended_at: { $not: { $eq: null } } }).populate(
-    ['winner', 'players.player', 'rounds.landlord'],
-  );
+  const games = await Game.find({ ended_at: { $not: { $eq: null } } })
+    .sort('-began_at')
+    .populate(['winner', 'players.player', 'rounds.landlord']);
   res.status(200).render('overview', {
     title: 'All Games',
     games,
@@ -43,7 +43,11 @@ exports.createGame = catchAsync(async (req, res, next) => {
 
 exports.playGame = catchAsync(async (req, res, next) => {
   const id = req.params.id || req.app.param.id;
-  const game = await Game.findById(id).populate(['players.player']);
+  const game = await Game.findById(id).populate([
+    'players.player',
+    'rounds.landlord',
+    'winner',
+  ]);
   res.status(200).render('playGame', {
     title: '游戏开始',
     game,
