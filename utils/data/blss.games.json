@@ -1,0 +1,2980 @@
+[{
+  "_id": {
+    "$oid": "652f3d07509c66edf96fe096"
+  },
+  "players": [
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "score": 69,
+      "_id": {
+        "$oid": "652f3d07509c66edf96fe097"
+      }
+    },
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "score": 15,
+      "_id": {
+        "$oid": "652f3d07509c66edf96fe098"
+      }
+    },
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "score": -84,
+      "_id": {
+        "$oid": "652f3d07509c66edf96fe099"
+      }
+    }
+  ],
+  "began_at": {
+    "$date": "2023-10-18T02:03:51.350Z"
+  },
+  "rounds": [
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": true,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "652f3d0b509c66edf96fe0a4"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 2,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 24,
+      "peasant_score": -12,
+      "_id": {
+        "$oid": "652f3d19509c66edf96fe0ae"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "652f3dc6509c66edf96fe0b9"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 3,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -48,
+      "peasant_score": 24,
+      "_id": {
+        "$oid": "652f3ea1509c66edf96fe0c5"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "652f3f51509c66edf96fe0d2"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "652f4024509c66edf96fe0e0"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "652f40fe509c66edf96fe0ef"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "652f41d5509c66edf96fe0ff"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "652f42c7509c66edf96fe110"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "652f437d509c66edf96fe122"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "652f4449509c66edf96fe135"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "652f44fb509c66edf96fe149"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "652f45e0509c66edf96fe15e"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "652f46df509c66edf96fe174"
+      }
+    }
+  ],
+  "slug": "tue-oct-17-2023",
+  "__v": 14,
+  "ended_at": {
+    "$date": "2023-10-18T02:45:51.682Z"
+  },
+  "winner": {
+    "$oid": "6524be7d1f82e109049d33e0"
+  }
+},
+{
+  "_id": {
+    "$oid": "65308b85e373e8eaec33f60b"
+  },
+  "players": [
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "score": -6,
+      "_id": {
+        "$oid": "65308b85e373e8eaec33f60c"
+      }
+    },
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "score": -24,
+      "_id": {
+        "$oid": "65308b85e373e8eaec33f60d"
+      }
+    },
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "score": 30,
+      "_id": {
+        "$oid": "65308b85e373e8eaec33f60e"
+      }
+    }
+  ],
+  "began_at": {
+    "$date": "2023-10-19T01:51:01.822Z"
+  },
+  "rounds": [
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65308b89e373e8eaec33f619"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65308c3be373e8eaec33f623"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 2,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 24,
+      "peasant_score": -12,
+      "_id": {
+        "$oid": "65308d2de373e8eaec33f62e"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 2,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 24,
+      "peasant_score": -12,
+      "_id": {
+        "$oid": "65308e1de373e8eaec33f63a"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 2,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -24,
+      "peasant_score": 12,
+      "_id": {
+        "$oid": "65308f08e373e8eaec33f647"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65308fe7e373e8eaec33f655"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "653090e5e373e8eaec33f664"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6530921de373e8eaec33f674"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "653092dce373e8eaec33f685"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "653093d7e373e8eaec33f697"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "653094cce373e8eaec33f6aa"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "65309593e373e8eaec33f6be"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "653096a5e373e8eaec33f6d3"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "6530977ee373e8eaec33f6e9"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6530984ae373e8eaec33f700"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "65309905e373e8eaec33f718"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "65309a04e373e8eaec33f731"
+      }
+    }
+  ],
+  "slug": "wed-oct-18-2023",
+  "__v": 17,
+  "ended_at": {
+    "$date": "2023-10-19T02:52:52.347Z"
+  },
+  "winner": {
+    "$oid": "6524be7d1f82e109049d33e2"
+  }
+},
+{
+  "_id": {
+    "$oid": "6531c3eb4906816ead6a4667"
+  },
+  "players": [
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "score": 15,
+      "_id": {
+        "$oid": "6531c3eb4906816ead6a4668"
+      }
+    },
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "score": -12,
+      "_id": {
+        "$oid": "6531c3eb4906816ead6a4669"
+      }
+    },
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "score": -3,
+      "_id": {
+        "$oid": "6531c3eb4906816ead6a466a"
+      }
+    }
+  ],
+  "began_at": {
+    "$date": "2023-10-20T00:03:55.564Z"
+  },
+  "rounds": [
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6531c3f04906816ead6a4675"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 2,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -24,
+      "peasant_score": 12,
+      "_id": {
+        "$oid": "6531c49b4906816ead6a467f"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6531c5954906816ead6a468a"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "6531c6904906816ead6a4696"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "6531c77d4906816ead6a46a3"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6531c84e4906816ead6a46b1"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6531c9284906816ead6a46c0"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6531c9bd4906816ead6a46f0"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6531ca6e4906816ead6a4701"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": true,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "6531cb0b4906816ead6a4713"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "6531cbcc4906816ead6a4726"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "6531cca14906816ead6a473a"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "6531cd464906816ead6a474f"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6531ce064906816ead6a4765"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6531cf394906816ead6a477c"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 2,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -24,
+      "peasant_score": 12,
+      "_id": {
+        "$oid": "6531d0214906816ead6a4794"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6531d10c4906816ead6a47ad"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": true,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "6531d1c24906816ead6a47c7"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "6531d2844906816ead6a47e2"
+      }
+    }
+  ],
+  "slug": "thu-oct-19-2023",
+  "__v": 21,
+  "ended_at": {
+    "$date": "2023-10-20T01:06:12.202Z"
+  },
+  "winner": {
+    "$oid": "6524be7d1f82e109049d33e0"
+  }
+},
+{
+  "_id": {
+    "$oid": "65346618517b46f8bd59469c"
+  },
+  "players": [
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "score": 0,
+      "_id": {
+        "$oid": "65346618517b46f8bd59469d"
+      }
+    },
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "score": 0,
+      "_id": {
+        "$oid": "65346618517b46f8bd59469e"
+      }
+    },
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "score": 0,
+      "_id": {
+        "$oid": "65346618517b46f8bd59469f"
+      }
+    }
+  ],
+  "began_at": {
+    "$date": "2023-10-22T00:00:24.386Z"
+  },
+  "rounds": [
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "653466ab517b46f8bd5946aa"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 2,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -24,
+      "peasant_score": 12,
+      "_id": {
+        "$oid": "65346787517b46f8bd5946b4"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65346822517b46f8bd5946bf"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "653468f0517b46f8bd5946e3"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "653469a9517b46f8bd5946f0"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "65346a63517b46f8bd5946fe"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "65346b11517b46f8bd59470d"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "65346bfe517b46f8bd59471d"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "65346caf517b46f8bd59472e"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "65346d6e517b46f8bd594740"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65346e20517b46f8bd594753"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "65346ed6517b46f8bd594767"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65346f90517b46f8bd59477c"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6534704d517b46f8bd594792"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": true,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "653470f7517b46f8bd5947a9"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "653471a8517b46f8bd5947c1"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65347272517b46f8bd5947da"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6534731a517b46f8bd5947f4"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "65347449517b46f8bd59480f"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "653474e2517b46f8bd59482b"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "65347595517b46f8bd594848"
+      }
+    }
+  ],
+  "slug": "sat-oct-21-2023",
+  "__v": 23,
+  "ended_at": {
+    "$date": "2023-10-22T01:06:29.530Z"
+  },
+  "winner": {
+    "$oid": "6524be7d1f82e109049d33e2"
+  }
+},
+{
+  "_id": {
+    "$oid": "6535ba44dacd8fd80377d178"
+  },
+  "players": [
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "score": -27,
+      "_id": {
+        "$oid": "6535ba44dacd8fd80377d179"
+      }
+    },
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "score": -54,
+      "_id": {
+        "$oid": "6535ba44dacd8fd80377d17a"
+      }
+    },
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "score": 81,
+      "_id": {
+        "$oid": "6535ba44dacd8fd80377d17b"
+      }
+    }
+  ],
+  "began_at": {
+    "$date": "2023-10-23T00:11:48.431Z"
+  },
+  "rounds": [
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6535ba4ddacd8fd80377d186"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 2,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -24,
+      "peasant_score": 12,
+      "_id": {
+        "$oid": "6535bb3fdacd8fd80377d190"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6535bc16dacd8fd80377d19b"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "6535bd0fdacd8fd80377d1a7"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "6535be09dacd8fd80377d1b4"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6535bf17dacd8fd80377d1c2"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "6535bff3dacd8fd80377d1d1"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6535c0e1dacd8fd80377d1e1"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 2,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -24,
+      "peasant_score": 12,
+      "_id": {
+        "$oid": "6535c1d2dacd8fd80377d1f2"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6535c2b2dacd8fd80377d204"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6535c3cddacd8fd80377d217"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6535c4c3dacd8fd80377d22b"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": true,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 24,
+      "peasant_score": -12,
+      "_id": {
+        "$oid": "6535c5a6dacd8fd80377d240"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6535c669dacd8fd80377d256"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "6535c756dacd8fd80377d26d"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "6535c839dacd8fd80377d285"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6535c902dacd8fd80377d29e"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "6535c9c9dacd8fd80377d2b8"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 2,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -24,
+      "peasant_score": 12,
+      "_id": {
+        "$oid": "6535ca9ddacd8fd80377d2d3"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": true,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 24,
+      "peasant_score": -12,
+      "_id": {
+        "$oid": "6535cb30dacd8fd80377d327"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6535cbabdacd8fd80377d344"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6535cc5fdacd8fd80377d362"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65370a80fd14d766ee51d792"
+      }
+    }
+  ],
+  "slug": "mon-oct-23-2023",
+  "__v": 25,
+  "ended_at": {
+    "$date": "2023-10-24T00:06:24.398Z"
+  },
+  "winner": {
+    "$oid": "6524be7d1f82e109049d33e2"
+  }
+},
+{
+  "_id": {
+    "$oid": "65370a93fd14d766ee51d798"
+  },
+  "players": [
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "score": -3,
+      "_id": {
+        "$oid": "65370a93fd14d766ee51d799"
+      }
+    },
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "score": 6,
+      "_id": {
+        "$oid": "65370a93fd14d766ee51d79a"
+      }
+    },
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "score": -3,
+      "_id": {
+        "$oid": "65370a93fd14d766ee51d79b"
+      }
+    }
+  ],
+  "began_at": {
+    "$date": "2023-10-24T00:06:43.148Z"
+  },
+  "rounds": [
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "65370b9dfd14d766ee51d7a6"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65370c5dfd14d766ee51d7b0"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "65370d1afd14d766ee51d7bb"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65370e13fd14d766ee51d7c7"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65370eeffd14d766ee51d7d4"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "65370fa8fd14d766ee51d7e2"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "653710a1fd14d766ee51d7f1"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "653711c4fd14d766ee51d801"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6537126ffd14d766ee51d812"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6537133cfd14d766ee51d824"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "653713e0fd14d766ee51d837"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "653714a6fd14d766ee51d84b"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "653715a0fd14d766ee51d860"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "65371685fd14d766ee51d876"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "65371735fd14d766ee51d88d"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "653717fcfd14d766ee51d8a5"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "653718a8fd14d766ee51d8be"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65371971fd14d766ee51d8d8"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "65371a80fd14d766ee51d8f3"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65371b95fd14d766ee51d90f"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65371c6ffd14d766ee51d92c"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65371d27fd14d766ee51d94a"
+      }
+    }
+  ],
+  "slug": "mon-oct-23-2023",
+  "__v": 22,
+  "ended_at": {
+    "$date": "2023-10-24T01:25:59.782Z"
+  },
+  "winner": {
+    "$oid": "6524be7d1f82e109049d33e1"
+  }
+},
+{
+  "_id": {
+    "$oid": "653876c3a442c50a64bb9397"
+  },
+  "players": [
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "score": 69,
+      "_id": {
+        "$oid": "653876c3a442c50a64bb9398"
+      }
+    },
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "score": -39,
+      "_id": {
+        "$oid": "653876c3a442c50a64bb9399"
+      }
+    },
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "score": -30,
+      "_id": {
+        "$oid": "653876c3a442c50a64bb939a"
+      }
+    }
+  ],
+  "began_at": {
+    "$date": "2023-10-25T02:00:35.386Z"
+  },
+  "rounds": [
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6538780da442c50a64bb93a5"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "653878d8a442c50a64bb93af"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "653879c5a442c50a64bb93ba"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65387aaba442c50a64bb93c6"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "65387b4da442c50a64bb93d3"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65387c32a442c50a64bb93e1"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "65387d09a442c50a64bb93f0"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65387dc4a442c50a64bb9400"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "65387ef1a442c50a64bb9411"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "65387fafa442c50a64bb9423"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "65388084a442c50a64bb9436"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6538813aa442c50a64bb944a"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "653881ffa442c50a64bb945f"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "65388314a442c50a64bb9475"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "653883c2a442c50a64bb948c"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "6538845ea442c50a64bb94a4"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6538857ba442c50a64bb94bd"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "65388650a442c50a64bb94d7"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "6538874ca442c50a64bb94f2"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6538882ba442c50a64bb950e"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": true,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 24,
+      "peasant_score": -12,
+      "_id": {
+        "$oid": "653888b9a442c50a64bb952b"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6538897aa442c50a64bb9549"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "65388a24a442c50a64bb9568"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "65388acea442c50a64bb9588"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "65388bc3a442c50a64bb95a9"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "65388ca7a442c50a64bb95cb"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "65388d47a442c50a64bb95ee"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "65388df4a442c50a64bb9612"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "65388e9aa442c50a64bb9637"
+      }
+    }
+  ],
+  "slug": "tue-oct-24-2023",
+  "__v": 29,
+  "ended_at": {
+    "$date": "2023-10-25T03:42:18.300Z"
+  },
+  "winner": {
+    "$oid": "6524be7d1f82e109049d33e0"
+  }
+},
+{
+  "_id": {
+    "$oid": "6539b2a35024a02a638df3f1"
+  },
+  "players": [
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "score": 6,
+      "_id": {
+        "$oid": "6539b2a35024a02a638df3f2"
+      }
+    },
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "score": -3,
+      "_id": {
+        "$oid": "6539b2a35024a02a638df3f3"
+      }
+    },
+    {
+      "player": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "score": -3,
+      "_id": {
+        "$oid": "6539b2a35024a02a638df3f4"
+      }
+    }
+  ],
+  "began_at": {
+    "$date": "2023-10-26T00:28:19.008Z"
+  },
+  "rounds": [
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6539b3315024a02a638df3ff"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6539b4065024a02a638df409"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6539b53e5024a02a638df414"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6539b60f5024a02a638df420"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6539b6d95024a02a638df42d"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6539b7a15024a02a638df43b"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6539b87e5024a02a638df44a"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "6539b95d5024a02a638df45a"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6539ba1f5024a02a638df46b"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6539bacf5024a02a638df47d"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "6539bba55024a02a638df490"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "6539bca25024a02a638df4a4"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6539bd4b5024a02a638df4b9"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6539be015024a02a638df4cf"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "6539beac5024a02a638df4e6"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6539bf685024a02a638df4fe"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6539c0485024a02a638df517"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6539c15a5024a02a638df531"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6539c2195024a02a638df54c"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "6539c3045024a02a638df568"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6539c3ab5024a02a638df585"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6539c4605024a02a638df5a3"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 2,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -24,
+      "peasant_score": 12,
+      "_id": {
+        "$oid": "6539c5225024a02a638df5c2"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6539c6025024a02a638df5e2"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6539c6d75024a02a638df603"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6539c7b65024a02a638df625"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "6539c8a95024a02a638df648"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -12,
+      "peasant_score": 6,
+      "_id": {
+        "$oid": "6539c9a45024a02a638df66c"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6539ca6a5024a02a638df691"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6539cb055024a02a638df6b7"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6539cbb65024a02a638df6de"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6539cc9a5024a02a638df706"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6539cd535024a02a638df72f"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6539ce455024a02a638df759"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6539ced95024a02a638df784"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "6539cf7a5024a02a638df7b0"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 6,
+      "peasant_score": -3,
+      "_id": {
+        "$oid": "6539d0265024a02a638df7dd"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6539d0b75024a02a638df80b"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e2"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "6539d1705024a02a638df83a"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 0,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e1"
+      },
+      "won": false,
+      "landlord_score": -6,
+      "peasant_score": 3,
+      "_id": {
+        "$oid": "6539d2575024a02a638df86a"
+      }
+    },
+    {
+      "base_score": 3,
+      "bombs": 1,
+      "spring": false,
+      "landlord": {
+        "$oid": "6524be7d1f82e109049d33e0"
+      },
+      "won": true,
+      "landlord_score": 12,
+      "peasant_score": -6,
+      "_id": {
+        "$oid": "6539d3215024a02a638df89b"
+      }
+    }
+  ],
+  "slug": "wed-oct-25-2023",
+  "__v": 41,
+  "ended_at": {
+    "$date": "2023-10-26T02:46:57.702Z"
+  },
+  "winner": {
+    "$oid": "6524be7d1f82e109049d33e0"
+  }
+}]
