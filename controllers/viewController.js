@@ -10,7 +10,7 @@ exports.getOverview = catchAsync(async (req, res, next) => {
     .sort('-began_at')
     .populate(['winner', 'players.player', 'rounds.landlord']);
 
-  const message = req.params.id ? `game [${req.params.id}] deleted!` : '';
+  const message = req.params.id ? `[${req.params.id}] ❎` : '';
   res.status(200).render('overview', {
     title: 'All Games',
     games,

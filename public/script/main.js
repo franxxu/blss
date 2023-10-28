@@ -39,3 +39,25 @@ const selectUser = function (inputId) {
   const input = document.getElementById(inputId);
   input.checked = !input.checked;
 };
+
+const selectFile = function (inputId, image) {
+  const input = document.getElementById(inputId);
+  input.click();
+  input.addEventListener('change', () => {
+    image.src = URL.createObjectURL(input.files[0]);
+  });
+};
+
+const validateNewGame = function (bannerId, inputName) {
+  const inputs = document.getElementsByName(inputName);
+  const banner = document.getElementById(bannerId);
+  const selectedArray = Array.from(inputs.values()).filter(
+    (input) => input.checked,
+  );
+
+  if (selectedArray.length !== 3) {
+    banner.textContent = `3 ✔, ${selectedArray.length} ❌`;
+    return false;
+  }
+  return true;
+};

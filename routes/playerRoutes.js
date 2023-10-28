@@ -3,17 +3,19 @@ const playerController = require('../controllers/playerController');
 
 const router = express.Router();
 
-//router.param('name', playerController.normalizeName);
+router.get('/', playerController.allPlayers);
+router.get('/:id', playerController.getPlayerById);
 
-router
-  .route('/')
-  .post(playerController.newPlayer)
-  .get(playerController.allPlayers);
-
-router
-  .route('/:id')
-  .get(playerController.getPlayerById)
-  .post(playerController.modifyPlayer)
-  .delete(playerController.deletePlayerById);
+router.post(
+  '/create',
+  playerController.uploadUserImage,
+  playerController.newPlayer,
+);
+router.post(
+  '/update/:id',
+  playerController.uploadUserImage,
+  playerController.modifyPlayer,
+);
+router.post('/delete/:id', playerController.deletePlayer);
 
 module.exports = router;

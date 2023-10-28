@@ -1,21 +1,34 @@
+const multer = require('multer');
 const Player = require('../models/player');
 const catchAsync = require('../utils/catchAsync');
+const AppError = require('../utils/appError');
+const fsUtils = require('../utils/fsUtils');
 
-//route handler
-// const normalizeName = (req, res, next, val) => {
-//   const name = val.trim().toLowerCase();
-//   req.params.name = name;
-//   next();
-// };
+const multerStorage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, 'public/img');
+  },
+  filename: (req, file, cb) => {
+    const ext = file.mimetype.split('/')[1];
+    cb(null, `player-${Date.now()}.${ext}`);
+  },
+});
 
-class APIFeatures {
-  constructor(query, queryString) {
-    this.query = query;
-    this.queryString = queryString;
+const multerFilter = (req, file, cb) => {
+  if (file.mimetype.startsWith('image')) {
+    cb(null, true);
+  } else {
+    cb(new AppError('Image only!', 400), false);
   }
+};
 
-  filter() {}
-}
+const upload = multer({
+  storage: multerStorage,
+  fileFilter: multerFilter,
+});
+
+const uploadUserImage = upload.single('image');
+
 const allPlayers = catchAsync(async (req, res, next) => {
   const players = await Player.find();
   res.status(200).render('player', {
@@ -25,19 +38,21 @@ const allPlayers = catchAsync(async (req, res, next) => {
 });
 
 const newPlayer = catchAsync(async (req, res, next) => {
-  await Player.create(req.body);
+  await Player.create({ name: req.body.name, image: req.file.filename });
   allPlayers(req, res, next);
 });
 
 const modifyPlayer = catchAsync(async (req, res, next) => {
-  if (req.body['delete.x']) {
-    await Player.findByIdAndDelete(req.params.id);
-  } else {
-    await Player.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
-      runValidators: true,
-    });
-  }
+  const player = { name: req.body.name };
+  if (req.file) player.image = req.file.filename;
+  const oldPLayer = await Player.findByIdAndUpdate(req.params.id, player);
+  if (req.file) fsUtils.cleanUpImage(oldPLayer.image);
+  allPlayers(req, res, next);
+});
+
+const deletePlayer = catchAsync(async (req, res, next) => {
+  const player = await Player.findByIdAndDelete(req.params.id);
+  fsUtils.cleanUpImage(player.image);
   allPlayers(req, res, next);
 });
 
@@ -66,12 +81,12 @@ const getPlayerById = async (req, res) => {
 };
 
 const createPlayer = catchAsync(async (req, res, next) => {
-  const newPlayer = await Player.create(req.body);
+  const aPlayer = await Player.create(req.body);
   res.status(201).json({
     status: 'success',
     results: 1,
     data: {
-      newPlayer,
+      aPlayer,
     },
   });
   next();
@@ -109,7 +124,8 @@ const deletePlayerById = async (req, res) => {
 };
 
 module.exports = {
-  // normalizeName,
+  uploadUserImage,
+  deletePlayer,
   modifyPlayer,
   allPlayers,
   newPlayer,
