@@ -941,9 +941,6 @@ select {
 .flex-col {
   flex-direction: column;
 }
-.flex-col-reverse {
-  flex-direction: column-reverse;
-}
 .items-end {
   align-items: flex-end;
 }
@@ -980,6 +977,10 @@ select {
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+.bg-\[\#F5F5DC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 220 / var(--tw-bg-opacity));
 }
 .bg-\[\#fff\] {
   --tw-bg-opacity: 1;
