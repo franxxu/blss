@@ -3,21 +3,21 @@ extends base
 block content
   div(class='absolute right-0 z-[100] font-bold text-2xl')= game.began_at.toLocaleTimeString('en-US')
     div(class='text-right p-2')
-      form(action=`/removeGame/${game._id}` method='post')
-        input(type='image' src='/img/recycle.svg' class='w-12 h-12')
+      form(action=`/removeGame/${game._id}` id='removeGameForm' method='post' )
+        button(type='button' class='w-12 h-12' data-modal-target='static-modal' data-modal-toggle='static-modal' )
+          img(src='/img/recycle.svg' class='')
   div(class='bg-white border border-gray-300 text-2xl overflow-auto snap-y flex flex-col' style='max-height:75vh;')
     table(class='table-auto w-full' id='gameTable')
       thead(class='z-30 sticky top-0 bg-blue-300')
         tr
-          th(class='text-center mx-0-auto')
-            svg(class='h-10 w-10')
-              use(href='/img/icons.svg#icon-repeat')
-          each element in game.players
-            th(class='p-2')
-              img(src=`/img/${element.player.image}`, alt=`${element.player.name}` class='h-14 w-14 rounded-full mx-0-auto')
+          th(class='text-center')
+            img(class='w-10 h-10  mx-0-auto' src='/img/round.svg')
           th(class='text-center mx-0-auto')
             svg(class='h-10 w-10 fill-red-600 mx-0-auto')
               use(href='/img/icons.svg#icon-award')
+          each element in game.players
+            th(class='p-2')
+              img(src=`/img/${element.player.image}`, alt=`${element.player.name}` class='h-14 w-14 rounded-full mx-0-auto')
           th(class='p-2 text-left')
             svg(class='w-10 h-10 mx-0-auto fill-[#F2C83B]')
               use( href='/img/icons.svg#icon-coin')
@@ -46,28 +46,36 @@ block content
           tr(class='bg-gray-300')
             td
               button(type='submit' class='btn-primary') ✔
+            td(class='text-center py-4 px-2')
+              input(type='checkbox' class='w-10 h-10' name='won' id='won')
             fieldset(class='')
               each element in game.players
                 td(class=' text-center py-4 px-2')
                   input(class='form-radio w-10 h-10' type='radio' name='landlord' value=`${element.player._id}` checked)
-              td(class='text-center py-4 px-2')
-                input(type='checkbox' class='w-10 h-10' name='won' id='won')
               td(class='text-center')
                 div(class='text-center flex-col')
                   div
-                    button(class=' w-8 h-8' type='button' onclick='incNumber(\'base_score\')') ➕
+                    button(class='w-10 h-4' type='button' onclick='incNumber(\'base_score\')') 
+                      svg(class='w-10 h-4 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6')
+                        path(stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 5 5 1 1 5')
                   div
                     input(type='text' class='w-10 h-10 font-bold text-xl' name='base_score' id='base_score' value='3' readonly)
                   div
-                    button(class=' w-8 h-8' type='button' onclick='decNumber(\'base_score\')') ➖
+                    button(class=' w-10 h-4' type='button' onclick='decNumber(\'base_score\')')
+                      svg(class='w-10 h-4 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6')
+                        path(stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 1 4 4 4-4')
               td(class='text-center')
                 div(class='text-center flex-col')
                   div
-                    button(class=' w-8 h-8' type='button' onclick='incNumber(\'bombs\')') ➕
+                    button(class=' w-10 h-4' type='button' onclick='incNumber(\'bombs\')')
+                      svg(class='w-10 h-4 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6')
+                        path(stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 5 5 1 1 5')
                   div
                     input(type='text' class='w-10 h-10 font-bold text-xl text-red-600' name='bombs' id='bombs' value='0' readonly)
                   div
-                    button(class=' w-8 h-8' type='button' onclick='decNumber(\'bombs\')') ➖
+                    button(class=' w-10 h-4' type='button' onclick='decNumber(\'bombs\')')
+                      svg(class='w-10 h-4 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6')
+                        path(stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 1 4 4 4-4')
               td(class='text-center')
                 input(type='checkbox'  class='w-10 h-10' name='spring' id='spring')
               td(class='text-center')
@@ -101,4 +109,17 @@ block content
                 input(type='checkbox' class='w-6 h-6' checked=round.spring disabled)
               td(class=`text-center ${colors[round.landlord.name]}`)= round.landlord.name
           //- new round below
-        
+
+  div( id='static-modal' data-modal-backdrop='static' tabindex='-1' aria-hidden='true' class='fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full')
+    div(class='relative w-full max-w-2xl max-h-full')
+      div(class='relative bg-white rounded-lg shadow dark:bg-gray-700')
+        div(class='flex justify-center p-4 border-b rounded-t dark:border-gray-600')
+          h3(lass='text-xl font-semibold text-gray-900 dark:text-white text-center')  
+            img(src='/img/recycle.svg' class='w-20 h-20')
+        //- div(class='p-6 space-y-6')
+        //-   p(class='text-base leading-relaxed text-gray-500 dark:text-gray-400') With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+        //-     p(class='text-base leading-relaxed text-gray-500 dark:text-gray-400') The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
+
+        div(class='flex justify-end p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600')
+          button(data-modal-hide='static-modal' type='button' class='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-xl px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800' onclick='document.getElementById(\'removeGameForm\').submit()') ✔
+          button(data-modal-hide='static-modal' type='button' class='text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-xl px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600') ❌
