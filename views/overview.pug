@@ -6,40 +6,31 @@ block content
     div(class='max-w-full m-1 grid gap-2 grow')
       each game in games
         div(class='rounded-md overflow-hidden shadow-md bg-[#fff] flex flex-col')
-          //- div(class='grow bg-blue-100 text-left text-3xl font-bold text-gray-400 p-3 drop-shadow-xl')= game.began_at.toLocaleString() 
-          div(class='grid grid-cols-3 p-1')
-            div(class='flex col-span-2 p-1 items-center')
-              svg(class='h-16 w-16 fill-green-600')
-                use(href='/img/icons.svg#icon-user') 
-                  title Players of the game
+          div(class='grid grid-cols-2 p-1 gap-10')
+            div(class='flex flex-row p-1')
+              - var scoreStr = ''
               each player in game.players
-                a(href=`/player/${game.winner._id}`)
+                - scoreStr += player.score + '/'
+                div(class='relative')
                   img(src=`/img/${player.player.image}`, alt=`${player.player.name}` class='h-20 w-20 rounded-full m-2 drop-shadow-lg')
-            div(class='flex p-1 items-center')
-              svg(class='h-16 w-16 fill-green-600')
-                use(href='/img/icons.svg#icon-award')
-                  title Winner of the game
-              a(href=`/player/${game.winner._id}`)
-                img(src=`/img/${game.winner.image}`, alt=`${game.winner.name}` class='h-20 w-20 rounded-full m-2')
-            div(class='flex p-1 items-end')
-              svg(class='h-10 w-10 fill-green-600')
-                use(href='/img/icons.svg#icon-clock')
-                  title Duration of the game
-              span.pl-3.bg-white.font-bold.text-2xl.p-1= ((game.ended_at - game.began_at) / 36e5).toFixed(2) + ' 小时'
-            div(class='flex p-1 items-end')
-              svg(class='h-10 w-10 fill-green-600')
-                use(href='/img/icons.svg#icon-repeat')
-                  title Rounds of the game
-              span.pl-3.bg-white.font-bold.text-2xl.p-1= game.rounds.length + ' 回合'
-            div(class='flex p-1 items-end align-bottom')
-              svg(class='h-10 w-10 fill-green-600')
-                use(href='/img/icons.svg#icon-bookmark')
-                  title Winning score
-              span.pl-3.bg-white.font-bold.text-2xl.p-1= game.getPlayerScore(game.winner)
-              a(href=`/play/${game._id}` class='h-12 w-12 top-4')
-                img(src='/img/right.svg' class='')
+                  - if( player.player.name === game.winner.name )
+                    svg(class='top-0 left-16 absolute h-8 w-8 fill-red-600 border-2 bg-[#FFD700] border-white rounded-full')
+                      use(href='/img/icons.svg#icon-award')
+            div(class='grid grid-cols-2 gap-2')
+              div(class='flex flex-nowrap gap-2')
+                img(class='w-10 h-10 filter-green-600' src='/img/clock.svg')
+                span.font-bold.text-3xl= game.duration
+              div(class='flex gap-2 justify-center')
+                img(class='w-10 h-10 filter-green-600' src='/img/round.svg')
+                span.font-bold.text-3xl= game.rounds.length
+              div(class='flex gap-2')
+                img(class='w-10 h-10 filter-green-600' src='/img/notebook.svg')
+                span.bg-white.font-bold.text-3xl= scoreStr.substring(0, scoreStr.length-1)
+              div(class='flex justify-end mr-6')
+                a(href=`/play/${game._id}` class='h-10 w-10')
+                  img(src='/img/arrow-right.svg' class='h-10 w-10 filter-blue-600')
           details(class='bg-gray-300 open:bg-amber-200 duration-300')
-            summary(class='bg-inherit px-5 py-3 cursor-pointer text-2xl font-bold')= '游戏详情 (' + game.began_at.toLocaleString() + ')'
+            summary(class='bg-inherit px-5 py-3 cursor-pointer text-2xl font-bold')= game.began_at.toLocaleString()
             div(class='bg-white border border-gray-300 text-2xl max-h-96 overflow-auto')
               table(class='table-auto w-full')
                 thead(class='sticky top-0 z-30 bg-white')

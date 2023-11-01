@@ -8,7 +8,7 @@ block content
           img(src='/img/recycle.svg' class='')
   div(class='bg-white border border-gray-300 text-2xl overflow-auto snap-y flex flex-col' style='max-height:75vh;')
     table(class='table-auto w-full' id='gameTable')
-      thead(class='z-30 sticky top-0 bg-blue-300')
+      thead(class='z-30 sticky top-0 shadow-lg')
         tr
           th(class='text-center')
             img(class='w-10 h-10  mx-0-auto' src='/img/round.svg')
@@ -17,7 +17,7 @@ block content
               use(href='/img/icons.svg#icon-award')
           each element in game.players
             th(class='p-2')
-              img(src=`/img/${element.player.image}`, alt=`${element.player.name}` class='h-14 w-14 rounded-full mx-0-auto')
+              img(src=`/img/${element.player.image}`, alt=`${element.player.name}` class='h-14 w-14 rounded-lg mx-0-auto')
           th(class='p-2 text-left')
             svg(class='w-10 h-10 mx-0-auto fill-[#F2C83B]')
               use( href='/img/icons.svg#icon-coin')
@@ -28,7 +28,7 @@ block content
             svg(class='w-10 h-10 fill-green-600 mx-0-auto')
               use( href='/img/icons.svg#icon-spring')
           th(class='text-center')
-            img(src='/img/landlord2.svg' class='h-10 w-10 mx-0-auto')
+            img(src='/img/landlord2.svg' class='h-10 w-10 mx-0-auto filter-purple-600')
       - 
         var springTimes = game.rounds.filter((round) => round.spring).length
         var bombsTimes = game.rounds.filter((round) => round.bombs > 0).length
@@ -43,9 +43,9 @@ block content
           input(type='hidden' form='removeRound' name='roundId' id='roundId' value='')
           input(type='hidden' form='removeRound' name='gameId' value=`${game._id}`)
         form(id='game' name='game' method='post' action=`/play/${game._id}`)
-          tr(class='bg-gray-300')
-            td
-              button(type='submit' class='btn-primary') ✔
+          tr(class='bg-white')
+            td(class='text-center')
+              button(type='submit' class='btn-primary bg-green-400 text-white') ✔
             td(class='text-center py-4 px-2')
               input(type='checkbox' class='w-10 h-10' name='won' id='won')
             fieldset(class='')
@@ -53,40 +53,38 @@ block content
                 td(class=' text-center py-4 px-2')
                   input(class='form-radio w-10 h-10' type='radio' name='landlord' value=`${element.player._id}` checked)
               td(class='text-center')
-                div(class='text-center flex-col')
-                  div
-                    button(class='w-10 h-4' type='button' onclick='incNumber(\'base_score\')') 
-                      svg(class='w-10 h-4 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6')
-                        path(stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 5 5 1 1 5')
-                  div
-                    input(type='text' class='w-10 h-10 font-bold text-xl' name='base_score' id='base_score' value='3' readonly)
-                  div
-                    button(class=' w-10 h-4' type='button' onclick='decNumber(\'base_score\')')
-                      svg(class='w-10 h-4 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6')
-                        path(stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 1 4 4 4-4')
+                div(class='flex flex-col border w-10 rounded-lg border-gray-400 relative text-center mx-0-auto')
+                  button(class='h-4 w-full border-t flex rounded-t' type='button' onclick='incNumber(\'base_score\')') 
+                    svg(class='w-10 h-4 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6')
+                      path(stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 5 5 1 1 5')
+                  div(class='h-8 w-full text-center border bg-gray-400 text-white font-semibold text-xl')
+                    span(class='' id='base_score_text') 3
+                    input(type='hidden' name='base_score' id='base_score' value='3' readonly)
+                  button(class='h-4 w-full border-b flex rounded-b' type='button' onclick='decNumber(\'base_score\')')
+                    svg(class='w-full h-4 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6')
+                      path(stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 1 4 4 4-4')
               td(class='text-center')
-                div(class='text-center flex-col')
-                  div
-                    button(class=' w-10 h-4' type='button' onclick='incNumber(\'bombs\')')
-                      svg(class='w-10 h-4 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6')
-                        path(stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 5 5 1 1 5')
-                  div
-                    input(type='text' class='w-10 h-10 font-bold text-xl text-red-600' name='bombs' id='bombs' value='0' readonly)
-                  div
-                    button(class=' w-10 h-4' type='button' onclick='decNumber(\'bombs\')')
-                      svg(class='w-10 h-4 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6')
-                        path(stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 1 4 4 4-4')
+                div(class='flex flex-col border w-10 rounded-lg border-gray-400 relative text-center mx-0-auto')
+                  button(type='button' class='h-4 w-full border-t flex rounded-t' onclick='incNumber(\'bombs\')')
+                    svg(class='w-10 h-4 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6')
+                      path(stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 5 5 1 1 5')
+                  div(class='h-8 w-full text-center border bg-gray-400 text-white font-semibold text-xl')
+                    input(type='hidden' name='bombs' id='bombs' value='0' readonly)
+                    span(class='' id='bombs_text') 0
+                  button(class='h-4 w-full border-b flex rounded-b' type='button' onclick='decNumber(\'bombs\')')
+                    svg(class='w-10 h-4 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6')
+                      path(stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 1 4 4 4-4')
               td(class='text-center')
                 input(type='checkbox'  class='w-10 h-10' name='spring' id='spring')
               td(class='text-center')
-                button(type='submit' class='btn-primary' form='removeRound') ❌
+                button(type='submit' class='btn-primary bg-red-400' form='removeRound') ❌
         - if( game.rounds.length > 0 )    
-          tr(class='bg-[#F5F5DC]')
-            td(class='p-2 text-center font-bold')
+          tr(class='bg-gray-400 text-white')
+            td(class='p-2 text-center font-bold invert')
               img(src='/img/result.svg' class='h-10 w-10 mx-0-auto')
+            td(class='text-center font-bold')= wonTimes + '/' + game.rounds.length
             each element in game.players 
               td(class='pr-2 text-right font-bold')= element.score
-            td(class='text-center font-bold')= wonTimes + '/' + game.rounds.length
             td
             td(class='text-center font-bold')= bombsTimes + '/' + game.rounds.length
             td(class='text-center font-bold')= springTimes + '/' + game.rounds.length
@@ -95,13 +93,13 @@ block content
           - round = game.rounds[index]
             tr(onclick='selectRow(this,\'roundId\')' id=`${round._id}`)
               td(class='p-2 text-center font-bold')= index+1
+              td(class=' text-center')
+                input(type='checkbox' class='w-6 h-6' checked=round.won disabled)
               each element in game.players
                 - 
                   var score = element.player.name === round.landlord.name ? round.landlord_score : round.peasant_score
                   var cstr = score < 0 ? 'text-white font-bold bg-red-600' : ''
                 td(class=`pr-2 text-right ${cstr}`)= score
-              td(class=' text-center')
-                input(type='checkbox' class='w-6 h-6' checked=round.won disabled)
               td(class=' text-center')= round.base_score
                 - cstr = round.bombs > 0 ? 'bg-green-600 text-white font-bold' : ''; 
               td(class=`text-center ${cstr}`)= round.bombs

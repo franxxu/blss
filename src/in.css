@@ -66,6 +66,26 @@
   .btn-tinker {
     @apply bg-blue-500 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
   }
+
+  .filter-green {
+    filter: brightness(0) saturate(100%) invert(68%) sepia(69%) saturate(5148%)
+      hue-rotate(87deg) brightness(116%) contrast(131%);
+  }
+
+  .filter-green-600 {
+    filter: brightness(0) saturate(100%) invert(42%) sepia(94%) saturate(2922%)
+      hue-rotate(120deg) brightness(96%) contrast(83%);
+  }
+
+  .filter-blue-600 {
+    filter: brightness(0) saturate(100%) invert(31%) sepia(95%) saturate(3821%)
+      hue-rotate(217deg) brightness(97%) contrast(91%);
+  }
+
+  .filter-purple-600 {
+    filter: brightness(0) saturate(100%) invert(13%) sepia(44%) saturate(5194%)
+      hue-rotate(287deg) brightness(103%) contrast(122%);
+  }
 }
 
 @layer base {
