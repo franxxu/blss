@@ -82,5 +82,12 @@ gameSchema.methods.getPlayerScore = function (player) {
   return score;
 };
 
+gameSchema.virtual('duration').get(function () {
+  const duration = this.ended_at - this.began_at;
+  const hours = parseInt(duration / 3600000, 10);
+  const minutes = parseInt((duration % 3600000) / 60000, 10);
+  return `${hours}:${String(minutes).padStart(2, '0')}`;
+});
+
 const Game = mongoose.model('Game', gameSchema);
 module.exports = Game;
