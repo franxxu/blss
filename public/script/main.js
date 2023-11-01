@@ -23,16 +23,20 @@ const validateSelection = function (inputId) {
 };
 const incNumber = function (inputId, inc = 1, min = 0, max = 9) {
   const input = document.getElementById(inputId);
+  const text = document.getElementById(`${inputId}_text`);
   const n = Number(input.value);
   if (n >= max) return;
   input.value = n + inc;
+  text.textContent = input.value;
 };
 
 const decNumber = function (inputId, dec = 1, min = 0, max = 9) {
   const input = document.getElementById(inputId);
+  const text = document.getElementById(`${inputId}_text`);
   const n = Number(input.value);
   if (n <= min) return;
   input.value = n - dec;
+  text.textContent = input.value;
 };
 
 const selectUser = function (inputId) {
