@@ -12,7 +12,7 @@ block content
               each player in game.players
                 - scoreStr += player.score + '/'
                 div(class='relative')
-                  img(src=`/img/${player.player.image}`, alt=`${player.player.name}` class='h-20 w-20 rounded-full m-2 drop-shadow-lg')
+                  img(src=`/img/${player.player.image}`, alt=`${player.player.name}` class='h-20 w-20 rounded-lg m-2 drop-shadow-lg')
                   - if( player.player.name === game.winner.name )
                     svg(class='top-0 left-16 absolute h-8 w-8 fill-red-600 border-2 bg-[#FFD700] border-white rounded-full')
                       use(href='/img/icons.svg#icon-award')
@@ -37,9 +37,9 @@ block content
                   tr
                     each player in game.players
                       th(class='text-center')
-                        img(src=`/img/${player.player.image}`, class='h-14 w-14 rounded-full mx-0-auto')
+                        img(src=`/img/${player.player.image}`, class='h-14 w-14 rounded-lg mx-0-auto')
                     th(class='text-center') 
-                        img(src='/img/landlord.png' class='h-14 w-14 rounded-full mx-0-auto')
+                      img(src='/img/landlord2.svg' class='h-10 w-10 mx-0-auto filter-purple-600')
                     th(class='text-center')
                       svg(class='h-10 w-10 fill-red-600 mx-0-auto')
                         use(href='/img/icons.svg#icon-award')
@@ -61,7 +61,7 @@ block content
                     tr
                       each player in game.players
                         - var score = player.player.name === round.landlord.name ? round.landlord_score : round.peasant_score;
-                        td(class='pr-2 text-right font-black')= score
+                        td(class='pr-2 text-right')= score
                       td(class='text-center')= round.landlord.name
                       td(class=' text-center')
                         input(type='checkbox' class='w-10 h-10' checked=round.won disabled)
