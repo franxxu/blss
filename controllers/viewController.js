@@ -91,7 +91,3 @@ exports.removeGame = catchAsync(async (req, res, next) => {
   await Game.findByIdAndRemove(req.params.id);
   exports.getOverview(req, res, next);
 });
-
-exports.getCarousel = catchAsync(async (req, res, next) => {
-  res.status(200).render('carousel');
-});
