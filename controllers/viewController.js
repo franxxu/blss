@@ -1,4 +1,3 @@
-const mongoose = require('mongoose');
 const Game = require('../models/game');
 const catchAsync = require('../utils/catchAsync');
 const Player = require('../models/player');
@@ -6,11 +5,11 @@ const AppError = require('../utils/appError');
 
 exports.getOverview = catchAsync(async (req, res, next) => {
   //games with no ended_at are considered just created not yet played.
-  const games = await Game.find({ ended_at: { $not: { $eq: null } } })
+  const games = await Game.find({ ended_at: { $exists: true } })
     .sort('-began_at')
     .populate(['winner', 'players.player', 'rounds.landlord']);
 
-  const message = req.params.id ? `[${req.params.id}] ❎` : '';
+  const message = req.params.id ? `❎ [${req.params.id}] ` : '';
   res.status(200).render('overview', {
     title: 'All Games',
     games,
@@ -91,4 +90,8 @@ exports.modifyGame = catchAsync(async (req, res, next) => {
 exports.removeGame = catchAsync(async (req, res, next) => {
   await Game.findByIdAndRemove(req.params.id);
   exports.getOverview(req, res, next);
+});
+
+exports.getCarousel = catchAsync(async (req, res, next) => {
+  res.status(200).render('carousel');
 });
