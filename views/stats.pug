@@ -1,0 +1,58 @@
+extends base
+
+block content 
+
+  div(class='table w-full border-collapse border border-spacing-4')
+    div(class='table-row-group')
+      div(class='table-row')
+        div(class='align-middle table-cell bg-amber-100')
+          img(class='w-16 h-16  mx-0-auto' src='/img/medal.svg')
+        each position in gamesWon
+          div(class='relative align-middle table-cell')
+            img(src=`/img/${position.player.image}` alt=`${position.player.name}` class='h-20 w-20 rounded-lg m-2 drop-shadow-lg')
+            span(class='top-0 text-lg left-16 absolute h-8 w-20 text-center fill-red-600 border-2 bg-green-300 border-white rounded-md font-bold')= position.games_won + '/' + totalGames
+      div(class='table-row border border-spacing-2')
+        div(class='align-middle table-cell bg-amber-100')
+          svg(class='h-16 w-16  mx-0-auto')
+            use(href='/img/icons.svg#icon-landlord')
+        each position in asLandlord
+          div(class='relative align-middle table-cell text-center')
+            img(src=`/img/${position.landlord.image}` alt=`${position.landlord.name}` class='h-20 w-20 rounded-lg m-2 drop-shadow-lg')
+            span(class='top-0 align-middle text-text-xl left-12 absolute text-center h-8 w-24 fill-red-600 border-2 bg-green-300 border-white rounded-md font-bold')= position.asLandlord +'/' + totalRounds
+      div(class='table-row border border-spacing-2')        
+        div(class='align-middle table-cell bg-amber-100')
+          img(class='w-16 h-16  mx-0-auto' src='/img/write.svg')
+        each position in maxScore
+          div(class='relative align-middle table-cell')
+            img(src=`/img/${position.player.image}` alt=`${position.player.name}` class='h-20 w-20 rounded-lg m-2 drop-shadow-lg')
+            span(class='top-0 text-lg left-16 absolute text-center h-8 w-10 fill-red-600 border-2 bg-green-300 border-white rounded-md font-bold')= position.score
+      div(class='table-row border border-spacing-2')
+        div(class='align-middle table-cell bg-amber-100')
+          img(class='w-16 h-16  mx-0-auto' src='/img/round.svg')
+        each position in maxRounds
+          div(class='relative align-middle table-cell' )
+            a(href=`/play/${position._id}` class='h-20 w-20')
+              img(src='/img/arrow-right.svg' class='h-20 w-20 filter-blue-600')
+            span(class='top-0 text-lg left-16 absolute text-center h-8 w-10 fill-red-600 border-2 bg-green-300 border-white rounded-md font-bold')= position.numberOfRounds
+      div(class='table-row border border-spacing-2')
+        div(class='align-middle table-cell bg-amber-100')
+          img(class='w-16 h-16  mx-0-auto' src='/img/bomb-on-palm.svg')
+        each position in maxBombs
+          div(class='relative align-middle table-cell')
+            a(href=`/play/${position._id}` class='h-20 w-20')
+              img(src='/img/arrow-right.svg' class='h-20 w-20 filter-blue-600')
+            span(class='top-0 text-lg left-16 absolute text-center h-8 w-10 fill-red-600 border-2 bg-green-300 border-white rounded-md font-bold')= position.bombs
+      div(class='table-row border border-spacing-2')
+        div(class='align-middle table-cell bg-amber-100')
+          img(class='w-16 h-16  mx-0-auto' src='/img/clock2.svg')
+        each position in maxDuration
+          - 
+            const hours = parseInt(position.duration / 3600000, 10)
+            const minutes = parseInt((position.duration % 3600000) / 60000, 10)
+            const duration = `${hours}:${String(minutes).padStart(2, '0')}`
+          div(class='relative align-middle table-cell')
+            a(href=`/play/${position._id}` class='h-20 w-20 mx-0-auto')
+              img(src='/img/arrow-right.svg' class='h-20 w-20 filter-blue-600')
+            span(class='top-0 text-lg left-16 absolute text-center h-8 w-16 fill-red-600 border-2 bg-green-300 border-white rounded-md font-bold')= duration
+
+    

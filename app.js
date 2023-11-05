@@ -30,6 +30,7 @@ app.use('/api/v1/games', gameRouter);
 app.use('/api/v1/stats', statsRouter);
 app.use('/', viewRouter);
 app.use('/player', playerRouter);
+app.use('/stats', statsRouter);
 
 app.all('*', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
