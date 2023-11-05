@@ -45,39 +45,31 @@ block content
         form(id='game' name='game' method='post' action=`/play/${game._id}`)
           tr(class='bg-white')
             td(class='text-center')
-              button(type='submit' class='btn-primary bg-green-400 text-white') ✔
-            td(class='text-center py-4 px-2')
+              button(type='submit' class=' w-10 h-10 bg-green-400 rounded-lg text-center') ✔
+            td(class='text-center')
               input(type='checkbox' class='w-10 h-10' name='won' id='won')
             fieldset(class='')
               each element in game.players
-                td(class=' text-center py-4 px-2')
+                td(class=' text-center')
                   input(class='form-radio w-10 h-10' type='radio' name='landlord' value=`${element.player._id}` checked)
-              td(class='text-center')
-                div(class='flex flex-col border w-10 rounded-lg border-gray-400 relative text-center mx-0-auto')
-                  button(class='h-4 w-full border-t flex rounded-t' type='button' onclick='incNumber(\'base_score\')') 
-                    svg(class='w-10 h-4 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6')
-                      path(stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 5 5 1 1 5')
-                  div(class='h-8 w-full text-center border bg-gray-400 text-white font-semibold text-xl')
-                    span(class='' id='base_score_text') 3
+              td(class='text-center p-1 w-20')
+                div(class='flex flex-row border rounded-lg border-gray-400 relative text-center mx-0-auto align-middle')
+                  button(class='h-10 w-6 font-bold text-xl' type='button' onclick='decNumber(\'base_score\')') -
+                  div(class='h-12 w-6 text-center border bg-gray-400 text-white font-bold text-lg')
+                    span(class='align-middle pt-1' id='base_score_text') 3
                     input(type='hidden' name='base_score' id='base_score' value='3' readonly)
-                  button(class='h-4 w-full border-b flex rounded-b' type='button' onclick='decNumber(\'base_score\')')
-                    svg(class='w-full h-4 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6')
-                      path(stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 1 4 4 4-4')
-              td(class='text-center')
-                div(class='flex flex-col border w-10 rounded-lg border-gray-400 relative text-center mx-0-auto')
-                  button(type='button' class='h-4 w-full border-t flex rounded-t' onclick='incNumber(\'bombs\')')
-                    svg(class='w-10 h-4 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6')
-                      path(stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 5 5 1 1 5')
-                  div(class='h-8 w-full text-center border bg-gray-400 text-white font-semibold text-xl')
+                  button(class='h-10 w-6 font-bold text-xl' type='button' onclick='incNumber(\'base_score\')') +
+              td(class='text-center p-1 w-20')
+                div(class='flex flex-row border rounded-lg border-gray-400 relative text-center mx-0-auto align-middle')
+                  button(class='h-10 w-6 font-bold text-xl' type='button' onclick='decNumber(\'bombs\')') -
+                  div(class='h-12 w-6 text-center border bg-gray-400 text-white font-bold text-lg')
                     input(type='hidden' name='bombs' id='bombs' value='0' readonly)
                     span(class='' id='bombs_text') 0
-                  button(class='h-4 w-full border-b flex rounded-b' type='button' onclick='decNumber(\'bombs\')')
-                    svg(class='w-10 h-4 text-gray-800 dark:text-white' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6')
-                      path(stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 1 4 4 4-4')
+                  button(class='h-10 w-6 font-bold text-xl' type='button' onclick='incNumber(\'bombs\')') +
               td(class='text-center')
                 input(type='checkbox'  class='w-10 h-10' name='spring' id='spring')
               td(class='text-center')
-                button(type='submit' class='btn-primary bg-red-400' form='removeRound') ❌
+                button(type='submit' class='w-10 h-10 text-center bg-red-400 rounded-lg' form='removeRound') ❌
         - if( game.rounds.length > 0 )    
           tr(class='bg-gray-400 text-white')
             td(class='p-2 text-center font-bold invert')
