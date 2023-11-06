@@ -1,7 +1,7 @@
 extends base
 
 block content
-  div(class='absolute right-0 z-[100] font-bold text-2xl')= game.began_at.toLocaleTimeString('en-US')
+  div(class='absolute right-0 z-[100] font-bold text-2xl')= game.began_at.toLocaleString('en-US')
     div(class='text-right p-2')
       form(action=`/removeGame/${game._id}` id='removeGameForm' method='post' )
         button(type='button' class='w-12 h-12' data-modal-target='static-modal' data-modal-toggle='static-modal' )
