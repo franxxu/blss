@@ -1,18 +1,21 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
 
-const roundSchema = new mongoose.Schema({
-  base_score: Number,
-  bombs: Number,
-  spring: Boolean,
-  landlord: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Player',
+const roundSchema = new mongoose.Schema(
+  {
+    base_score: Number,
+    bombs: Number,
+    spring: Boolean,
+    landlord: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Player',
+    },
+    won: Boolean,
+    landlord_score: Number,
+    peasant_score: Number,
   },
-  won: Boolean,
-  landlord_score: Number,
-  peasant_score: Number,
-});
+  { timestamps: true },
+);
 
 const gameSchema = new mongoose.Schema({
   rounds: [roundSchema],
