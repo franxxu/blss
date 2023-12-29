@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "6524be7d1f82e109049d33e1"
+  },
+  "name": "ophelia",
+  "level": 0,
+  "image": "ophelia.jpg",
+  "slug": "ophelia",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6524be7d1f82e109049d33e0"
+  },
+  "name": "alex",
+  "level": 0,
+  "image": "alex.jpg",
+  "slug": "alex",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6524be7d1f82e109049d33e2"
+  },
+  "name": "grace",
+  "level": 0,
+  "image": "grace.jpg",
+  "slug": "grace",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653c8fdfa441ad549912c11c"
+  },
+  "name": "evey",
+  "level": 0,
+  "image": "player-1698540611234.jpeg",
+  "slug": "evey",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65714dd17e9f054341c48799"
+  },
+  "name": "妈祖",
+  "level": 0,
+  "image": "player-1701924301251.jpeg",
+  "slug": "",
+  "__v": 0
+}]
