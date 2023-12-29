@@ -10,14 +10,14 @@ const dropDB = async () => {
 
 const loadPlayer = async () => {
   const data = JSON.parse(
-    fs.readFileSync(`${__dirname}/data/playerData.json`, 'utf8'),
+    fs.readFileSync(`${__dirname}/data/blss.players.json`, 'utf8'),
   );
   return Player.create(data);
 };
 
 const loadGame = async () => {
   const data = JSON.parse(
-    fs.readFileSync(`${__dirname}/data/gameData.json`, 'utf8'),
+    fs.readFileSync(`${__dirname}/data/blss.games.json`, 'utf8'),
   );
   return Game.create(data);
 };
