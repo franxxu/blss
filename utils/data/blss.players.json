@@ -1,21 +1,21 @@
 [{
   "_id": {
-    "$oid": "6524be7d1f82e109049d33e1"
-  },
-  "name": "ophelia",
-  "level": 0,
-  "image": "ophelia.jpg",
-  "slug": "ophelia",
-  "__v": 0
-},
-{
-  "_id": {
     "$oid": "6524be7d1f82e109049d33e0"
   },
   "name": "alex",
   "level": 0,
   "image": "alex.jpg",
   "slug": "alex",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6524be7d1f82e109049d33e1"
+  },
+  "name": "ophelia",
+  "level": 0,
+  "image": "ophelia.jpg",
+  "slug": "ophelia",
   "__v": 0
 },
 {
