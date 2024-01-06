@@ -9,7 +9,7 @@ const multerStorage = multer.diskStorage({
     cb(null, 'public/img');
   },
   filename: (req, file, cb) => {
-    const ext = file.mimetype.split('/')[1];
+    const ext = file.originalname.split('.')[1];
     cb(null, `player-${Date.now()}.${ext}`);
   },
 });
