@@ -45,11 +45,6 @@ echo "******git installed" >> /var/log/userdata.log
 #      PORT=80
 #      DATABASE_LOCAL=mongodb://127.0.0.1:27017/blss" > config.env
 
-# mongoexport --collection=players --uri="mongodb+srv://blssuser:GyQCNKbv8KJjiCS1@cluster0.id5wxje.mongodb.net/blss?retryWrites=true&w=majority" --out=blss.players.json
-# mongoimport --collection=players --db=blss --file=blss.players.json
-# mongoexport --collection=games --uri="mongodb+srv://blssuser:GyQCNKbv8KJjiCS1@cluster0.id5wxje.mongodb.net/blss?retryWrites=true&w=majority" --out=blss.games.json
-# mongoimport --collection=games --db=blss --file=blss.games.json
-
 # pm2 startup
 # pm2 start server.js --name "blss"
 # pm2 save
