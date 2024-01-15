@@ -63,13 +63,34 @@ We go to "new game" page to start a new game by click the first icon(landlord).
 
 (New Game page, which you start a game)
 
-Choose 3 players(first 3 players are selected by default) to start a new game
-
+Choose 3 players(first 3 players are selected by default) to start a new game.
 
 ![newgame2](https://github.com/franxxu/blss/assets/109082755/edca94ac-8e74-459e-aea2-f329c41c04a5)
 
 
 
+Clicking the start button to go to "Play Game" page.
+
+(Play Game page, which you record all rounds of a game)
+
+The page is using table like interface with a "header row" and "control row" on the top of the table.
+![playgame](https://github.com/franxxu/blss/assets/109082755/09614a16-7146-4174-b842-b101074263b7)
+
+For "header row" and "control row", here are the descriptions of each column from left to right:
+
+[round] - number of each round;
+
+        - submit button, to submit the round;
+
+[badge] - indicating whether the landlord of the game has won or not
+
+        - check if the landlord won the game, leave unchecked if the landlord lost the game
+
+[player] - the score of player 1 through 3, negative score for lost and positive for won
+
+         - click if the player is the landlord
+
+        
 
 
 
