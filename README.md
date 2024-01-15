@@ -1,4 +1,4 @@
-# blss
+# BLSS
 
 Summary:
 BLSS, "Beat the Landlord Scoring System", is a software for keeping socres for "beat the landlord" game. BL is called "dou4di4zhu3" in Chinese, which is very popular in mainland China.  
@@ -36,3 +36,11 @@ Development(on windows):
 "npm run debug-prod" as command for debugging as in production environment
 "npm run tailwind-watch" as command for tailwind watch
 "npm run postcss" as command for postcssing the style.css file
+
+
+Using BLSS:
+
+(Default page is the game list page, which showing all the games played by all players)
+
+![default](https://github.com/franxxu/blss/assets/109082755/8b513e23-259e-4fb9-8521-6a4eb8c5579e)
+
