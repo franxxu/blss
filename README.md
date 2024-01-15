@@ -57,7 +57,16 @@ Using BLSS:
 
 ![default](https://github.com/franxxu/blss/assets/109082755/8b513e23-259e-4fb9-8521-6a4eb8c5579e)
 
+
+Games are listed from latest to earlest.  Players are shown with a badge as the indication of the winner of the game.  Clock icon indicates the duration of the game, round icon shows the number of rounds, scorepad shows total scores of each player, and arrow icon will bring you to the play game page of the game again, where you can continute play the game.  
+The accordion shows immutable table of all the rounds in the game.
+
+![gamelist2](https://github.com/franxxu/blss/assets/109082755/c912515a-e89a-4964-aadb-ea691ade052f)
+
+
+
 The first thing to do is to create players on the player page.
+
 
 
 (Player page, which you can create, edit, and remove players, 3 players are required to play a game)
@@ -111,8 +120,6 @@ The start time of the game is on the very top right.
 
 ![playegame2](https://github.com/franxxu/blss/assets/109082755/59f8eae2-63d8-4770-9ea2-2f11d6b04e47)
 
-
-        
 
 
 
