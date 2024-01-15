@@ -11,7 +11,16 @@ From years of GUI design exprerience, allocating real estate to populate message
 So I decided to using only images and icons for the GUI part of this project. This project is my proof-of-concept on "pictation GUI design".
 
 Software requirements:
-NodeJS(18) and MongoDB Atlas or Community version.
+NodeJS(18) and MongoDB (Atlas or Community version).
+
+Software used:
+systems - nodejs, mongodb;
+language - javascript, css;
+GUI - html5, tailwindcss, pug;
+nodejs modules/middelwares - express, mongoose, morgan, multer, dotenv,
+design framework - mvc;
+development tools - vscode, prettier, eslint, postcss;
+deployment environment - aws ec2, linux, windows;
 
 Installation:
 "npm install"
