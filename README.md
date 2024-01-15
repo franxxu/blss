@@ -42,5 +42,35 @@ Using BLSS:
 
 (Default page is the game list page, which showing all the games played by all players)
 
+4 icons on the top of the page, "new game(landlord)", "game list(pair of aces)", "players", and "stats".  
+
 ![default](https://github.com/franxxu/blss/assets/109082755/8b513e23-259e-4fb9-8521-6a4eb8c5579e)
+
+The first thing to do is to create players on the player page.
+
+
+(Player page, which you can create, edit, and remove players, 3 players are required to play a game)
+
+![users](https://github.com/franxxu/blss/assets/109082755/710b5ed0-6d9c-4ef7-ab92-fe7c50226519)
+
+Lets create 4 players.
+
+![users3](https://github.com/franxxu/blss/assets/109082755/5e797153-112d-4949-85c3-178e22c4dbf1)
+
+
+
+We go to "new game" page to start a new game by click the first icon(landlord).
+
+(New Game page, which you start a game)
+
+Choose 3 players(first 3 players are selected by default) to start a new game
+
+
+![newgame2](https://github.com/franxxu/blss/assets/109082755/edca94ac-8e74-459e-aea2-f329c41c04a5)
+
+
+
+
+
+
 
