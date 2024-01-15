@@ -23,18 +23,29 @@ development tools - vscode, prettier, eslint, postcss;
 deployment environment - aws ec2, linux, windows;
 
 Installation:
+
 "npm install"
+
 This will install all the dependencies.
 
+
 Running:
+
 modify config.env to reflect your environment.
+
 "npm run dev" as commond for development
+
 "npm run prod" as command for production
 
+
 Development(on windows):
+
 "npm run debug" as command for debugging web app.
+
 "npm run debug-prod" as command for debugging as in production environment
+
 "npm run tailwind-watch" as command for tailwind watch
+
 "npm run postcss" as command for postcssing the style.css file
 
 
@@ -78,17 +89,28 @@ The page is using table like interface with a "header row" and "control row" on 
 
 For "header row" and "control row", here are the descriptions of each column from left to right:
 
-[round] - number of each round;
+[round] - headher: number of each round;  control: submit button, to submit the round;
 
-        - submit button, to submit the round;
+[badge] - headher: indicating whether the landlord of the game has won or not;  control: check if the landlord won the game, leave unchecked if the landlord lost the game;
 
-[badge] - indicating whether the landlord of the game has won or not
+[player] - headher: the score of player 1 through 3, negative score for lost and positive for won;  control: click if the player is the landlord;
 
-        - check if the landlord won the game, leave unchecked if the landlord lost the game
+[score]  - headher: base score of each game;  control: decrease or increase the base score, defaulted to 3;
 
-[player] - the score of player 1 through 3, negative score for lost and positive for won
+[bomb]   - headher: number of bombs of each game;  control: decrease of increase the number of bombs happened in the game;
 
-         - click if the player is the landlord
+[spring] - headher: indicating a "spring" event for each game;  control: check if a "spring" event happened during the game, leave uncheck if not;
+
+[landlord] - headher: showing the landload of each game;  control: remove button, to remove the round in case of error (a round needs to be selected by click on the row)
+
+Also a "subtotal row" appears as the third row, which shows a subtotal of each column.  For landlord column, colors are used to group users.
+
+A garbage bin icon on the to right is to delete the whole game.
+
+The start time of the game is on the very top right.
+
+![playegame2](https://github.com/franxxu/blss/assets/109082755/59f8eae2-63d8-4770-9ea2-2f11d6b04e47)
+
 
         
 
