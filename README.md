@@ -122,5 +122,23 @@ The start time of the game is on the very top right.
 
 
 
+(Stat Page, which display some stats of all the games played)
+
+![stats](https://github.com/franxxu/blss/assets/109082755/d8fbdedc-6c72-4797-8bea-293b3fc19d67)
+
+
+A table of stats with 6 different stats displayed in each row, explained from top to bottom below:
+
+[medal] - top 3 players who won most games;
+
+[landlord] - top 3 players who played most rounds as landlord;
+
+[score] - top 3 players who had the highest total game score;
+
+[round] - top 3 games with the most rounds;
+
+[bomb] - top 3 rounds with the most number of bombs;
+
+[duration] - top 3 games with the longest duration;
 
 
